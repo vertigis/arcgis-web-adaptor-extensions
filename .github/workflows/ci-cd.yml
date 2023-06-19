@@ -31,7 +31,7 @@ jobs:
           versionSpec: '5.x'
 
       - name: Determine Version
-        id:   gitversion
+        id: gitversion
         uses: gittools/actions/gitversion/execute@v0
         with:
           useConfigFile: true
@@ -45,12 +45,12 @@ jobs:
       - name: Test
         run: dotnet test
 
-      - name: Create artifact
+      - name: Create release artifact
         run: Compress-Archive -Path (Get-ChildItem -Path vs-wae/bin/release/net6.0/ -Exclude @("*.pdb")) -Destination VertiGIS.WebAdaptorExtensions.zip
 
       - uses: actions/upload-artifact@v2
         with:
-          name: artifact
+          name: release
           path: VertiGIS.WebAdaptorExtensions.zip
 
   release:
@@ -58,10 +58,10 @@ jobs:
     needs: build
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/beta'
     steps:
-      - name: Download artifact
+      - name: Download release artifact
         uses: actions/download-artifact@v3
         with:
-          name: artifact
+          name: release
 
       - name: Create Release
         id: create_release
