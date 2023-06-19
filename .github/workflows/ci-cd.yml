@@ -36,10 +36,6 @@ jobs:
         with:
           useConfigFile: true
 
-      - name: Display GitVersion variables (without prefix)
-        run: |
-          echo "MajorMinorPatch: ${{ steps.gitversion.outputs.majorMinorPatch }}"
-
       - name: Restore
         run: dotnet restore
 
