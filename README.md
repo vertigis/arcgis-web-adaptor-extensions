@@ -13,7 +13,8 @@ For ArcGIS versions prior to 11.1 see https://support.vertigis.com/hc/en-us/arti
 
 ### Installation
 1. Download the latest release from https://github.com/vertigis/arcgis-web-adaptor-extensions/releases/latest
-1. Extract the zip into the Web Adaptor directory
+   - Ensure the zip archive is not blocked by the operating system after you download it
+1. Extract the zip archive into the Web Adaptor directory
    - For example, `C:\inetpub\wwwroot\arcgis`
 1. Open a command prompt on the Web Adaptor machine
 1. Navigate the command prompt to the Web Adaptor directory
@@ -25,7 +26,7 @@ For ArcGIS versions prior to 11.1 see https://support.vertigis.com/hc/en-us/arti
 1. Navigate the command prompt to the Web Adaptor directory
    - For example, `cd C:\inetpub\wwwroot\arcgis`
 1. Execute the command `vs-wae trust [group/user]`
-   - Where `[group/user]` is the name of the Windows service account running the trusted applications, or the name of a Windows group containing the accounts.
+   - Where `[group/user]` is the name of the Windows service account running the trusted applications, or the name of a Windows group containing the account(s).
    - For example:
        - `vs-wae trust IIS AppPool\VertiGISStudioReporting`
        - `vs-wae trust DOMAIN\ServiceAccount`

@@ -50,7 +50,7 @@ jobs:
         run: dotnet test
 
       - name: Create artifact
-        run: Compress-Archive -Path (Get-ChildItem -Path VertiGIS.WebAdaptorExtensions/bin/release/net6.0/ -Exclude @("*.pdb")) -Destination VertiGIS.WebAdaptorExtensions.zip
+        run: Compress-Archive -Path (Get-ChildItem -Path vs-wae/bin/release/net6.0/ -Exclude @("*.pdb")) -Destination VertiGIS.WebAdaptorExtensions.zip
 
       - uses: actions/upload-artifact@v2
         with:
@@ -75,7 +75,7 @@ jobs:
         with:
           tag_name: v${{ needs.build.outputs.version }}
           release_name: v${{ needs.build.outputs.version }}
-          prerelease: ${{ github.ref == 'refs/heads/beta' }}
+          prerelease: ${{ github.ref != 'refs/heads/main' }}
 
       - name: Upload Release Asset
         id: upload-release-asset 
