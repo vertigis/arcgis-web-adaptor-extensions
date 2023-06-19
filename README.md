@@ -16,13 +16,13 @@ For ArcGIS versions prior to 11.1 see https://support.vertigis.com/hc/en-us/arti
    - Ensure the zip archive is not blocked by the operating system after you download it
 1. Extract the zip archive into the Web Adaptor directory
    - For example, `C:\inetpub\wwwroot\arcgis`
-1. Open a command prompt on the Web Adaptor machine
+1. Open an administrative command prompt on the Web Adaptor machine
 1. Navigate the command prompt to the Web Adaptor directory
    - For example, `cd C:\inetpub\wwwroot\arcgis`
 1. Execute the command `vs-wae add`
 
 ### Add a trusted server application
-1. Open a command prompt on the Web Adaptor machine
+1. Open an administrative command prompt on the Web Adaptor machine
 1. Navigate the command prompt to the Web Adaptor directory
    - For example, `cd C:\inetpub\wwwroot\arcgis`
 1. Execute the command `vs-wae trust [group/user]`
@@ -33,7 +33,7 @@ For ArcGIS versions prior to 11.1 see https://support.vertigis.com/hc/en-us/arti
        - `vs-wae trust DOMAIN\MachineName$`
 
 ### Remove a trusted server application
-1. Open a command prompt on the Web Adaptor machine
+1. Open an administrative command prompt on the Web Adaptor machine
 1. Navigate the command prompt to the Web Adaptor directory
    - For example, `cd C:\inetpub\wwwroot\arcgis`
 1. Execute the command `vs-wae trust --remove [group/user]`
