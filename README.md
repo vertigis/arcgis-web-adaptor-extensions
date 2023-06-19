@@ -12,7 +12,7 @@ For ArcGIS versions prior to 11.1 see https://support.vertigis.com/hc/en-us/arti
 ## Instructions
 
 ### Installation
-1. Download the latest release
+1. Download the latest release from https://github.com/vertigis/arcgis-web-adaptor-extensions/releases/latest
 1. Extract the zip into the Web Adaptor directory
    - For example, `C:\inetpub\wwwroot\arcgis`
 1. Open a command prompt on the Web Adaptor machine

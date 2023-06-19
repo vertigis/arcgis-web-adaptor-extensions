@@ -50,12 +50,12 @@ jobs:
         run: dotnet test
 
       - name: Create artifact
-        run: Compress-Archive -Path (Get-ChildItem -Path bin/release/net6.0/ -Exclude @("*.pdb")) -Destination release.zip
+        run: Compress-Archive -Path (Get-ChildItem -Path VertiGIS.WebAdaptorExtensions/bin/release/net6.0/ -Exclude @("*.pdb")) -Destination VertiGIS.WebAdaptorExtensions.zip
 
       - uses: actions/upload-artifact@v2
         with:
           name: artifact
-          path: release.zip
+          path: VertiGIS.WebAdaptorExtensions.zip
 
   release:
     runs-on: windows-2022
@@ -75,8 +75,7 @@ jobs:
         with:
           tag_name: v${{ needs.build.outputs.version }}
           release_name: v${{ needs.build.outputs.version }}
-          draft: false
-          prerelease: false
+          prerelease: ${{ github.ref == 'refs/heads/beta' }}
 
       - name: Upload Release Asset
         id: upload-release-asset 
@@ -85,6 +84,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./release.zip
-          asset_name: release.zip
+          asset_path: ./VertiGIS.WebAdaptorExtensions.zip
+          asset_name: VertiGIS.WebAdaptorExtensions.zip
           asset_content_type: application/zip
