@@ -35,6 +35,7 @@ jobs:
         uses: gittools/actions/gitversion/execute@v0
         with:
           useConfigFile: true
+          updateAssemblyInfo: true
 
       - name: Restore
         run: dotnet restore
