@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <OutputType>Library</OutputType>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\vgs.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\vs-wae.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
 	<ItemGroup>

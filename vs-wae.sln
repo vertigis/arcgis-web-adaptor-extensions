@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vgs-wae", "vgs-wae\vgs-wae.csproj", "{DADF81B6-E157-47F5-A018-17881ED7C5EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vs-wae", "vs-wae\vs-wae.csproj", "{DADF81B6-E157-47F5-A018-17881ED7C5EE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VertiGIS.WebAdaptorExtensions", "VertiGIS.WebAdaptorExtensions\VertiGIS.WebAdaptorExtensions.csproj", "{ED9D5D29-6980-4288-8E82-D066755DD7A9}"
 EndProject

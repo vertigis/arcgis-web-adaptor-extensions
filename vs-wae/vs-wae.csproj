@@ -3,11 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>vgs_wae</RootNamespace>
+    <RootNamespace>vs_wae</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\vgs.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\vs-wae.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>

@@ -162,9 +162,9 @@ var getAppPools = async () =>
 if (args.Length < 1)
 {
     Console.WriteLine("Help:");
-    Console.WriteLine("vgs-wae add");
-    Console.WriteLine("vgs-wae remove");
-    Console.WriteLine("vgs-wae trust [-r | --remove] [group/user]");
+    Console.WriteLine("vs-wae add");
+    Console.WriteLine("vs-wae remove");
+    Console.WriteLine("vs-wae trust [-r | --remove] [group/user]");
     Console.WriteLine();
 
     var file = await ConfigFile.LoadAsync();
