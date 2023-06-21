@@ -6,8 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <OutputType>Library</OutputType>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\vs-wae.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\_Shared\vs-wae.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\_Shared\AssemblyInfo.cs" Link="AssemblyInfo.cs" />
+  </ItemGroup>
 
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />

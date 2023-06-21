@@ -7,8 +7,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\vs-wae.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\_Shared\vs-wae.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\_Shared\AssemblyInfo.cs" Link="AssemblyInfo.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\VertiGIS.WebAdaptorExtensions\VertiGIS.WebAdaptorExtensions.csproj" />
