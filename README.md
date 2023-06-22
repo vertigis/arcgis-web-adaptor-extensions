@@ -1,6 +1,6 @@
 # ArcGIS Web Adaptor Extensions
 Server-based applications like VertiGIS Studio Printing, Reporting, and Workflow need to make server-to-server requests to ArcGIS Enterprise. 
-If and ArcGIS Web Adaptor is configured with Windows Authentication enabled and Anonymous Authentication disabled these requests will be blocked because the Web Adaptor captures both the Windows identity of the Application Pool user and the ArcGIS access token of the end user. These two credentials will not agree and the backend ArcGIS Enterprise service will respond with an error. 
+If an ArcGIS Web Adaptor is configured with Windows Authentication enabled and Anonymous Authentication disabled these requests will be blocked because the Web Adaptor captures both the Windows identity of the Application Pool user and the ArcGIS access token of the end user. These two credentials will not agree and the backend ArcGIS Enterprise service will respond with an error. 
 
 The VertiGIS Web Adaptor Extensions provide a targeted solution. The extensions modify the ArcGIS Web Adaptor to discard the Windows identity, for select trusted service accounts, after it has been validated. This allows the Web Adaptor to still require Windows Authentication for all requests, while passing only ArcGIS access tokens on to the backend ArcGIS Enterprise service when the request is from a known server application.
 
