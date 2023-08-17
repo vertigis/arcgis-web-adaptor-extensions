@@ -28,7 +28,7 @@ For ArcGIS Web Adaptor versions prior to 11.1 see https://support.vertigis.com/h
 1. Execute the command `vs-wae trust [group/user]`
    - Where `[group/user]` is the name of the Windows service account running the trusted applications, or the name of a Windows group containing the account(s).
    - For example:
-       - `vs-wae trust IIS AppPool\VertiGISStudioReporting`
+       - `vs-wae trust "IIS AppPool\VertiGISStudioReporting"`
        - `vs-wae trust DOMAIN\ServiceAccount`
        - `vs-wae trust DOMAIN\MachineName$`
 
