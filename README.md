@@ -5,9 +5,11 @@ If an ArcGIS Web Adaptor is configured with Windows Authentication enabled and A
 The VertiGIS Web Adaptor Extensions provide a targeted solution. The extensions modify the ArcGIS Web Adaptor to discard the Windows identity, for select trusted service accounts, after it has been validated. This allows the Web Adaptor to still require Windows Authentication for all requests, while passing only ArcGIS access tokens on to the backend ArcGIS Enterprise service when the request is from a known server application.
 
 ## Requirements
-ArcGIS Web Adaptor (IIS) version 11.1 and newer.
+ArcGIS Web Adaptor (IIS) version 11.1 and 11.2.
 
 For ArcGIS Web Adaptor versions prior to 11.1 see https://support.vertigis.com/hc/en-us/articles/11461061234066-Install-the-Geocortex-Web-Adaptor-Extensions.
+
+<u>For ArcGIS Web Adaptor versions 11.3 and later, there is no solution available.</u>
 
 ## Usage
 
