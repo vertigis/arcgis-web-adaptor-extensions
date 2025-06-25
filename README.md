@@ -9,7 +9,7 @@ ArcGIS Web Adaptor (IIS) version 11.1 and 11.2.
 
 For ArcGIS Web Adaptor versions prior to 11.1 see https://support.vertigis.com/hc/en-us/articles/11461061234066-Install-the-Geocortex-Web-Adaptor-Extensions.
 
-<u>For ArcGIS Web Adaptor versions 11.3 and later, there is no solution available.</u>
+_For ArcGIS Web Adaptor versions 11.3 and later, there is no solution available._
 
 ## Usage
 
